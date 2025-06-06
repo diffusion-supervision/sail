@@ -136,7 +136,7 @@
     <div class="is-centered has-text-centered">
       <h2 class="title is-3">SAIL Framework</h2>
       <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
-        <source src="./static/images/sail_framework.mp4"
+        <source src="./static/images/sail_framework.mov"
               type="video/mp4">
       </video>
       <!--div class="pipeline-img"-->
@@ -144,7 +144,7 @@
       <!--/div-->
       <div class="content has-text-justified">
         <p>
-        SAIL begins with a video generative model initially trained on a general set of in-domain demonstrations (left), and iteratively improves its visual planning performance for a particular task of interest via finetuning on its own self-collected experiences collected through adaptation with a large-scale pretrained video model and interaction (right).   In this way, SAIL effectively combines offline data (left) with online experience (right) into a self-adapting improvement cycle that iteratively bootstrap an in-domain video model into a strong visual planner for a particular task of interest.
+        SAIL utilizes a visual planner composed from two video generative models: one pretrained generally on internet-scale data and another pretrained on a general set of in-domain demonstrations.  SAIL iteratively improves the performance of this adapted visual planner by finetuning the in-domain model on its own self-collected experience.  In this way, SAIL effectively combines <b>offline data</b> with <b>online experience</b> into a self-adapting improvement cycle that iteratively bootstraps an in-domain video model into a strong visual planner for a particular task of interest.
         </p>
       </div>
     </div>
