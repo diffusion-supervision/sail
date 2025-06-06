@@ -107,7 +107,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          Video generative models trained on expert demonstrations have been utilized as performant text-conditioned visual planners for solving robotic tasks. However, generalization to unseen tasks remains a challenge. Whereas leveraging prior knowledge from additional pre-collected data, such as motion priors and instruction understanding provided by a vast collection of web videos, may facilitate improved generalization, in the era of experience we aim to design agents that can <i>continuously improve from self-collected behaviors</i> on-the-fly. In this work we thus propose the <b>Self-Adapting Improvement Loop (SAIL)</b>, where an in-domain video model iteratively updates itself on self-produced trajectories, collected through adaptation with an internet-scale pretrained video model, and steadily improves its performance for a specified task of interest.  We apply SAIL to a diverse suite of MetaWorld tasks, as well as a real robot arm, and find that performance improvements continuously emerge over multiple iterations for novel tasks unseen during the original in-domain video model training. Furthermore, we discover that SAIL is surprisingly robust regarding if and how the self-collected experience is filtered, and the quality of the initial in-domain demonstrations.  Through adaptation with summarized internet-scale data, and learning through experience, we thus demonstrate a way to iteratively bootstrap a high-performance video model for solving novel robotic tasks through self-improvement.
+          Video generative models trained on expert demonstrations have been utilized as performant text-conditioned visual planners for solving robotic tasks. However, generalization to unseen tasks remains a challenge. Whereas improved generalization may be facilitated by leveraging learned prior knowledge from additional pre-collected offline data sources, such as web-scale video datasets, in the era of experience we aim to design agents that can continuously improve in an <i>online manner</i> from self-collected behaviors.  In this work we thus propose the <b>Self-Adapting Improvement Loop (SAIL)</b>, where an in-domain video model iteratively updates itself on self-produced trajectories, collected through adaptation with an internet-scale pretrained video model, and steadily improves its performance for a specified task of interest.  We apply SAIL to a diverse suite of MetaWorld tasks, as well as two manipulation tasks on a real robot arm, and find that performance improvements continuously emerge over multiple iterations for novel tasks initially unseen during original in-domain video model training. Furthermore, we discover that SAIL is surprisingly robust regarding if and how the self-collected experience is filtered, and the quality of the initial in-domain demonstrations.  Through adaptation with summarized internet-scale data, and learning through online experience, we thus demonstrate a way to iteratively bootstrap a high-performance video model for solving novel robotic tasks through self-improvement.
           </p>
         </div>
       </div>
@@ -135,9 +135,13 @@
   <div class="container is-max-desktop">
     <div class="is-centered has-text-centered">
       <h2 class="title is-3">SAIL Framework</h2>
-      <div class="pipeline-img">
-        <img src="static/images/sail.png" alt="Self-Adapting Improvement Loop (SAIL)">
-      </div>
+      <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
+        <source src="./static/images/sail_framework.mp4"
+              type="video/mp4">
+      </video>
+      <!--div class="pipeline-img"-->
+        <!--img src="static/images/sail.png" alt="Self-Adapting Improvement Loop (SAIL)"-->
+      <!--/div-->
       <div class="content has-text-justified">
         <p>
         SAIL begins with a video generative model initially trained on a general set of in-domain demonstrations (left), and iteratively improves its visual planning performance for a particular task of interest via finetuning on its own self-collected experiences collected through adaptation with a large-scale pretrained video model and interaction (right).   In this way, SAIL effectively combines offline data (left) with online experience (right) into a self-adapting improvement cycle that iteratively bootstrap an in-domain video model into a strong visual planner for a particular task of interest.
