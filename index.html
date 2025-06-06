@@ -18,8 +18,8 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <!-- Favicon edited from Yu luck (https://thenounproject.com/yuluck/)-->
-  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+  <!-- Favicon-->
+  <link rel="icon" href="./static/images/sailboat.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -147,18 +147,18 @@
           <!-- <div class="is-centered has-text-centered">
           </div> -->
           <h2 class="subtitle-4by4 title center-title is-size-5">Visual Planning with SAIL</h2>
-          <div class="content has-text-justified">
-            <p>
+          <!--div class="content has-text-justified"-->
+            <!--p-->
             SAIL is able to iteratively improve success rate on novel robotic tasks it has never seen initial demonstrations for, specified by natural language.  This is facilitated by effective utilization of not only offline data (internet video datasets and in-domain demonstrations on other tasks) but also online self-collected experience data through the SAIL framework.
-            </p>
-          </div>
+            <!--/p-->
+          <!--/div-->
 
           <div class="columns is-mobile" style="height: 100%">
             <div class="column is-1 post">
-                <div class="row-annotation">
+                <div class="top-row-annotation">
                     <b>Visual Plan</b>
                 </div>
-                <div class="row-annotation">
+                <div class="bot-row-annotation">
                     <b>Environment Execution</b>
                 </div>
             </div>
@@ -168,6 +168,9 @@
             
             <!--Open Yellow Drawer Videos-->
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 0</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_0" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/yellow-drawer/yg_iter0_layout_0_plan_failure.mp4"
@@ -182,12 +185,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Open the Yellow Drawer"</h3>
-                <h3 class="subtitle type">Iteration 0</h3>
-                <h3 class="subtitle type_result">&#x274C;</h3>
+                <h3 class="subtitle type">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 1</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_1" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/yellow-drawer/yg_iter1_layout_0_plan_success.mp4"
@@ -202,12 +207,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Open the Yellow Drawer"</h3>
-                <h3 class="subtitle type">Iteration 1</h3>
-                <h3 class="subtitle type_result">&#x2705;</h3>
+                <h3 class="subtitle type">&#x2705;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 2</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/yellow-drawer/yg_iter2_layout_0_plan_success.mp4"
@@ -222,7 +229,6 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Open the Yellow Drawer"</h3>
-                <h3 class="subtitle type">Iteration 2</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
@@ -230,6 +236,9 @@
 
             <!--Push Orange Cup Videos-->
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 0</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_0" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/orange-push/rbo_iter0_layout_0_plan_fail.mp4"
@@ -244,12 +253,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Push the Orange Cup"</h3>
-                <h3 class="subtitle type">Iteration 0</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 1</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_1" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/orange-push/rbo_iter1_layout_0_plan_fail.mp4"
@@ -264,12 +275,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Push the Orange Cup"</h3>
-                <h3 class="subtitle type">Iteration 1</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 2</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/orange-push/rbo_iter2_layout_0_plan_success.mp4"
@@ -284,7 +297,6 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Push the Orange Cup"</h3>
-                <h3 class="subtitle type">Iteration 2</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
@@ -292,6 +304,9 @@
 
             <!--Push Purple Cup Videos-->
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 0</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_0" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/purple-push/rgp_iter0_layout_0_plan_fail.mp4"
@@ -306,12 +321,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Push the Purple Cup"</h3>
-                <h3 class="subtitle type">Iteration 0</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 1</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_1" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/purple-push/rgp_iter1_layout_0_plan_fail.mp4"
@@ -326,12 +343,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Push the Purple Cup"</h3>
-                <h3 class="subtitle type">Iteration 1</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 2</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/purple-push/rgp_iter2_layout_0_plan_success.mp4"
@@ -346,7 +365,6 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Push the Purple Cup"</h3>
-                <h3 class="subtitle type">Iteration 2</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
@@ -354,6 +372,9 @@
 
             <!--MetaWorld Drawer Close Videos-->
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 0</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_0" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/drawer-close/iter0_plan_fail_trim.mp4"
@@ -368,12 +389,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Drawer Close"</h3>
-                <h3 class="subtitle type">Iteration 0</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 1</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_1" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/drawer-close/iter1_plan_fail_trim.mp4"
@@ -388,12 +411,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Drawer Close"</h3>
-                <h3 class="subtitle type">Iteration 1</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 2</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/drawer-close/iter2_plan_success.mp4"
@@ -408,7 +433,6 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Drawer Close"</h3>
-                <h3 class="subtitle type">Iteration 2</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
@@ -416,6 +440,9 @@
 
             <!--MetaWorld Window Close Videos-->
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 0</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_0" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/window-close/iter0_plan_success.mp4"
@@ -430,12 +457,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Window Close"</h3>
-                <h3 class="subtitle type">Iteration 0</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 1</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_1" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/window-close/iter1_plan_success.mp4"
@@ -450,12 +479,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Window Close"</h3>
-                <h3 class="subtitle type">Iteration 1</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 2</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail/window-close/iter2_plan_success.mp4"
@@ -470,7 +501,6 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Window Close"</h3>
-                <h3 class="subtitle type">Iteration 2</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
@@ -486,18 +516,18 @@
       <div class="hero-body">
         <div class="container">
           <h2 class="subtitle-4by4 title center-title is-size-5">SAIL without Experience Filtering</h2>
-          <div class="content has-text-justified">
-            <p>
+          <!--div class="content has-text-justified"-->
+            <!--p-->
             We explore the performance of SAIL without experience filtering, and discover that SAIL is still able to iteratively improve for certain tasks.  This highlights how SAIL can leverage self-collected experience in a robust manner with respect to behavior quality and can enable scalable self-improvement, as filtering often requires some level of human intervention or carefully designed heuristics.
-            </p>
-          </div>
+            <!--/p-->
+          <!--/div-->
 
           <div class="columns is-mobile" style="height: 100%">
             <div class="column is-1 post">
-                <div class="row-annotation">
+                <div class="top-row-annotation">
                     <b>Visual Plan</b>
                 </div>
-                <div class="row-annotation">
+                <div class="bot-row-annotation">
                     <b>Environment Execution</b>
                 </div>
             </div>
@@ -507,6 +537,9 @@
             
             <!--Push Orange Cup Videos-->
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 0</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_0" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_no_filter/orange-push/rgo_iter0_layout_0_plan_fail.mp4"
@@ -521,12 +554,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Push the Orange Cup"</h3>
-                <h3 class="subtitle type">Iteration 0</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 1</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_1" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_no_filter/orange-push/rgo_iter1_layout_0_plan_success.mp4"
@@ -541,12 +576,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Push the Orange Cup"</h3>
-                <h3 class="subtitle type">Iteration 1</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 2</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_no_filter/orange-push/rgo_iter2_layout_0_plan_success.mp4"
@@ -561,7 +598,6 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Push the Orange Cup"</h3>
-                <h3 class="subtitle type">Iteration 2</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
@@ -569,6 +605,9 @@
 
             <!--Push Orange Cup Videos-->
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 0</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_0" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_no_filter/orange-push/bpo_iter0_layout_0_plan_fail.mp4"
@@ -583,12 +622,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Push the Orange Cup"</h3>
-                <h3 class="subtitle type">Iteration 0</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 1</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_1" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_no_filter/orange-push/bpo_iter1_layout_0_plan_fail.mp4"
@@ -603,12 +644,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Push the Orange Cup"</h3>
-                <h3 class="subtitle type">Iteration 1</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 2</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_no_filter/orange-push/bpo_iter2_layout_0_plan_success.mp4"
@@ -623,7 +666,6 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Push the Orange Cup"</h3>
-                <h3 class="subtitle type">Iteration 2</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
@@ -631,6 +673,9 @@
 
             <!--MetaWorld Drawer Close Videos-->
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 0</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_0" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_no_filter/drawer-close/iter0_plan_fail_trim.mp4"
@@ -645,12 +690,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Drawer Close"</h3>
-                <h3 class="subtitle type">Iteration 0</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 1</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_1" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_no_filter/drawer-close/iter1_plan_fail_trim.mp4"
@@ -665,12 +712,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Drawer Close"</h3>
-                <h3 class="subtitle type">Iteration 1</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 2</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_no_filter/drawer-close/iter2_plan_success.mp4"
@@ -685,7 +734,6 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Drawer Close"</h3>
-                <h3 class="subtitle type">Iteration 2</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
@@ -702,18 +750,18 @@
       <div class="hero-body">
         <div class="container">
           <h2 class="subtitle-4by4 title center-title is-size-5">SAIL with Suboptimal Data Initialization</h2>
-          <div class="content has-text-justified">
-            <p>
+          <!--div class="content has-text-justified"-->
+            <!--p-->
             We investigate the performance of SAIL when only suboptimal demonstration data is available, and discover that for certain tasks performance indeed increases over iterations without utilizing any initial expert demonstrations or data filtering.  This highlights how SAIL can potentially enable cheaper task-specific learning, as the visual planner learns primarily from its own experience rather than relying on expert data collection, which can be an expensive procedure. 
-            </p>
-          </div>
+            <!--/p-->
+          <!--/div-->
 
           <div class="columns is-mobile" style="height: 100%">
             <div class="column is-1 post">
-                <div class="row-annotation">
+                <div class="top-row-annotation">
                     <b>Visual Plan</b>
                 </div>
-                <div class="row-annotation">
+                <div class="bot-row-annotation">
                     <b>Environment Execution</b>
                 </div>
             </div>
@@ -723,6 +771,9 @@
             
             <!--MetaWorld Button Press Videos-->
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 0</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_0" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_suboptimal/button-press/iter0_plan_fail.mp4"
@@ -737,12 +788,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Button Push"</h3>
-                <h3 class="subtitle type">Iteration 0</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 1</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_1" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_suboptimal/button-press/iter1_plan_fail.mp4"
@@ -757,12 +810,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Button Push"</h3>
-                <h3 class="subtitle type">Iteration 1</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 2</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_suboptimal/button-press/iter2_plan_success.mp4"
@@ -777,7 +832,6 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Button Push"</h3>
-                <h3 class="subtitle type">Iteration 2</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
@@ -785,6 +839,9 @@
 
             <!--MetaWorld Window Close Videos-->
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 0</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_0" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_suboptimal/window-close/iter0_plan_fail_trim.mp4"
@@ -799,12 +856,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Window Close"</h3>
-                <h3 class="subtitle type">Iteration 0</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 1</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_1" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_suboptimal/window-close/iter1_plan_fail_trim.mp4"
@@ -819,12 +878,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Window Close"</h3>
-                <h3 class="subtitle type">Iteration 1</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 2</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_suboptimal/window-close/iter2_plan_success.mp4"
@@ -839,7 +900,6 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Window Close"</h3>
-                <h3 class="subtitle type">Iteration 2</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
@@ -847,6 +907,9 @@
 
             <!--MetaWorld Drawer Close Videos-->
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 0</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_0" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_suboptimal/drawer-close/iter0_plan_fail.mp4"
@@ -861,12 +924,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Drawer Close"</h3>
-                <h3 class="subtitle type">Iteration 0</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 1</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_1" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_suboptimal/drawer-close/iter1_plan_fail.mp4"
@@ -881,12 +946,14 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Drawer Close"</h3>
-                <h3 class="subtitle type">Iteration 1</h3>
                 <h3 class="subtitle type_result">&#x274C;</h3>
               </div>
             </div>
 
             <div class="">
+              <div class="has-text-centered">
+                <h3 class="subtitle header">Iteration 2</h3>
+              </div>
               <div class="item item-steve has-background">
                 <video poster="" id="ps_iteration_2" autoplay controls muted loop playsinline height="100%">
                   <source src="./static/videos/sail_suboptimal/drawer-close/iter2_plan_success.mp4"
@@ -901,7 +968,6 @@
               </div>
               <div class="has-text-centered">
                 <h3 class="subtitle prompt">"Drawer Close"</h3>
-                <h3 class="subtitle type">Iteration 2</h3>
                 <h3 class="subtitle type_result">&#x2705;</h3>
               </div>
             </div>
